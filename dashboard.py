@@ -678,10 +678,10 @@ def main():
             fig.add_trace(go.Scatter(x=ur.index, y=ur.values, name="Unemployment %",
                                      line=dict(color="#f1707a", width=2)), secondary_y=False)
             if not wage.empty:
-                fig.add_trace(go.Scatter(x=wage.index, y=yoy_series(wage).dropna().values,
-                                         x=yoy_series(wage).dropna().index,
-                                         name="Wage Growth YoY%",
-                                         line=dict(color="#ffb900", width=2)), secondary_y=True)
+                fig.add_trace(go.Scatter(x=yoy_series(wage).dropna().index,
+                         y=yoy_series(wage).dropna().values,
+                         name="Wage Growth YoY%",
+                         line=dict(color="#ffb900", width=2)), secondary_y=True)
             fig.update_layout(**PLOT_LAYOUT,
                               title=dict(text="Labor Market — Unemployment vs Wages", font=dict(size=13), x=0))
             fig.update_yaxes(title_text="Unemployment %", secondary_y=False,
