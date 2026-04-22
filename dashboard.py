@@ -128,7 +128,7 @@ INDICATORS = {
             dict(id="HOUST",   label="Housing Starts",       unit="K/yr",   dec=0, mode="value", note="New residential",    status="housing"  ),
             dict(id="PERMIT",  label="Building Permits",     unit="K/yr",   dec=0, mode="value", note="Fwd construction",   status="permits"  ),
             dict(id="DGORDER", label="Durable Goods Orders", unit="$B",     dec=1, mode="value", note="Business investment",status="mom_dir"  ),
-            dict(id="UMCSENT", label="Consumer Sentiment",   unit="",       dec=1, mode:"value", note="U of Michigan",      status="sentiment"),
+            dict(id="UMCSENT", label="Consumer Sentiment", unit="", dec=1, mode="value", note="U of Michigan", status="sentiment"),
             dict(id="M2SL",    label="M2 Money Supply",      unit="$B",     dec=0, mode="value", note="Watch YoY%",         status="neutral"  ),
         ]
     },
